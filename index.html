@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mochila de viagem</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <main class="main">
+        <div class="conteudo">
+            <div class="principal">
+                <div class="mochila"></div>
+                <form action="" class="adicionar" id="novoItem">
+                    <label for="item">Nome</label>
+                    <input type="text" name="nome" id="nome">
+                    <label for="item">Quantidade</label>
+                    <input type="number" name="quantidade" id="quantidade">
+                    <input type="submit" value="Adicionar" class="cadastrar">
+                </form>
+            </div>
+        
+        <ul class="lista" id="lista"></ul>
+
+        </div>
+
+        <div class="dicas">
+            
+            <h4 class="explicacao">Nos diga o lugar para onde vai viajar e receba dicas de que tipo de roupa usar de acordo com o clima (por cidade)</h4>
+
+            <div class="pergunta">
+                <div class="enviar"> 
+                    <input type="text" id="lugar" placeholder="Pesquisar"> 
+                    <input id="enviar" type="button" value="pesquisar">
+                </div>
+            </div>
+
+            <div class="destino" id="destino">
+                <div class="temperatura">
+
+                    <div class="informacoes">
+                        <h1 id="temperatura-numero">26º</h1>
+                        <h3 id="local">Fortaleza, Ceará - Brasil</h3>
+                        <h3 id="sensacao-termica">Sensação: 12º</h3>
+                        <h3 id="min-max">11º / 32º</h3>
+                    </div>
+                    <img src="./img/coldicon.png" id="img">
+
+
+                </div>
+                <div class="dica-container">
+                    <h2 id="estacao">Frio</h2>
+                    <p id="texto-dica">Utilizar roupas que cubram mais o corpo, considerando o frio que está fazendo.</p>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
