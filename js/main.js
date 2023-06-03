@@ -107,7 +107,7 @@ function tratandoDadosClima(dadosGeraisClima){
     const sensacaoTermicaCelsius = converterParaCelcius(dadosEspecificosClima.feels_like)
     const temperaturaCelsius = converterParaCelcius(dadosEspecificosClima.temp)
     const tempMaxCelsius = converterParaCelcius(dadosEspecificosClima.temp_max)
-    const tempMinCelsius = converterParaCelcius(dadosEspecificosClima.temp_min)
+    const tempMinCelsius = converterParaCelcius(dadosEspecificosClima.temp_min);
 
     return objDadosClima = {
         pais: pais,
